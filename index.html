@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Klippet — Clipboard Manager for iPhone & iPad</title>
+    <meta name="description" content="Klippet keeps the text you copy so it is there when you need it again — in the app, in the Klippet keyboard, or through Shortcuts. Snippets stay on your device.">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(180deg, #ffd84d 0%, #f5c400 100%);
+            min-height: 100vh;
+        }
+        .hero { text-align: center; padding: 60px 20px 40px; color: #1d1d1f; }
+        .app-icon {
+            width: 120px; height: 120px; border-radius: 27px;
+            margin: 0 auto 30px; display: block;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.25);
+        }
+        h1 { font-size: 2.5em; margin-bottom: 15px; font-weight: 700; }
+        .tagline { font-size: 1.2em; opacity: 0.92; margin-bottom: 10px; }
+        .container { max-width: 900px; margin: 0 auto; padding: 0 20px 60px; }
+        .shots {
+            display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px; padding: 10px 0 30px;
+        }
+        .shots img {
+            width: 100%; height: auto; border-radius: 18px; display: block;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.25);
+        }
+        .card {
+            background: white; border-radius: 16px; padding: 40px;
+            margin-bottom: 20px; box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        }
+        .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 30px; }
+        .feature { text-align: center; }
+        .feature-icon { font-size: 40px; margin-bottom: 15px; }
+        .feature h3 { font-size: 1.1em; margin-bottom: 8px; color: #1d1d1f; }
+        .feature p { font-size: 0.95em; color: #86868b; }
+        .privacy-note { text-align: center; color: #1d1d1f; background: #fff6cc;
+            border-radius: 12px; padding: 18px 24px; font-weight: 500; }
+        .links { text-align: center; padding: 20px; }
+        .links a { color: rgba(29,29,31,0.85); text-decoration: none; margin: 0 15px; font-size: 0.95em; }
+        .links a:hover { color: #1d1d1f; text-decoration: underline; }
+        h2 { text-align: center; margin-bottom: 30px; color: #1d1d1f; }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <img class="app-icon" src="icon.png" alt="Klippet app icon">
+        <h1>Klippet — Clipboard Manager</h1>
+        <p class="tagline">Save what you copy. Get it back anywhere.</p>
+        <!-- App Store badge goes here after release -->
+    </div>
+
+    <div class="container">
+        <div class="shots">
+            <img src="shots/01-list.jpg" alt="Snippet list with pinned and recent sections and a hidden snippet">
+            <img src="shots/02-keyboard.jpg" alt="Klippet keyboard typing a saved snippet into a message">
+            <img src="shots/03-grid.jpg" alt="Snippets as a grid of cards">
+            <img src="shots/04-settings.jpg" alt="Settings with the keyboard set-up steps">
+            <img src="shots/05-privacy.jpg" alt="Privacy screen: snippets are stored on this device">
+        </div>
+
+        <div class="card">
+            <h2>Features</h2>
+            <div class="features">
+                <div class="feature">
+                    <div class="feature-icon">📋</div>
+                    <h3>Save From Anywhere</h3>
+                    <p>One tap in the app, or the Save Clipboard shortcut — from the Action Button, a widget, the share sheet, or Siri</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">⌨️</div>
+                    <h3>Klippet Keyboard</h3>
+                    <p>Types any saved snippet straight into the field you are in — in every app</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">⚡️</div>
+                    <h3>Runs on Shortcuts</h3>
+                    <p>Retrieve Snippet shows your list right inside Shortcuts and puts the pick back on the clipboard</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">📌</div>
+                    <h3>Pin, Search, List or Grid</h3>
+                    <p>Pin the snippets you use daily; search finds the rest as you type; switch between a list and a grid of cards</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">👁️</div>
+                    <h3>Hidden Snippets</h3>
+                    <p>Give a snippet a name and hide its text — the list, the keyboard and Shortcuts show only the name; copying still uses the real text</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">🔒</div>
+                    <h3>Stays Yours</h3>
+                    <p>Snippets are stored on your device, work offline, and delete with a swipe</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">📱</div>
+                    <h3>iPhone & iPad</h3>
+                    <p>One app, native on both — built on App Intents and the system keyboard</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="privacy-note">
+            Your snippets, your device: everything is stored locally, works offline, and needs no account.
+        </div>
+    </div>
+
+    <div class="links">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="support.html">Support</a>
+        <a href="terms.html">Terms of Use</a>
+        <a href="mailto:kozlovskyaid@icloud.com">kozlovskyaid@icloud.com</a>
+    </div>
+</body>
+</html>
